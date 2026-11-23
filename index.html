@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bibliographie</title>
+  <style>
+    :root {
+      --fond: #f6f7f9;
+      --texte: #1d2430;
+      --discret: #5b6677;
+      --accent: #2b5d9b;
+      --trait: #d5d9e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fond: #161a21;
+        --texte: #e6e9ee;
+        --discret: #9aa4b2;
+        --accent: #8db8f0;
+        --trait: #2d3440;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+    .intro { color: var(--discret); margin: 0 0 2rem; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li {
+      padding: 1rem 0 1rem 1rem;
+      border-left: 3px solid var(--trait);
+      margin-bottom: 0.75rem;
+    }
+    li:hover { border-left-color: var(--accent); }
+    .titre { font-style: italic; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bibliographie</h1>
+    <p class="intro">Les ouvrages et articles que j’ai consultés.</p>
+
+    <!--
+      POUR AJOUTER UNE RÉFÉRENCE :
+      copie un bloc <li> ... </li> ci-dessous, colle-le dans la liste
+      et remplace le texte. Garde l’ordre alphabétique des auteurs.
+      Le lien <a> est facultatif : supprime-le s’il n’y en a pas.
+    -->
+    <ul>
+      <li>
+        Auteur, Prénom. (2020).
+        <span class="titre">Titre de l’ouvrage</span>.
+        Éditions Exemple.
+      </li>
+
+      <li>
+        Dupont, Marie. (2018).
+        <span class="titre">Titre d’un article</span>.
+        Revue Exemple, 12(3), 45-67.
+        <a href="https://example.com">Lien</a>
+      </li>
+
+      <li>
+        Martin, Paul. (2022).
+        <span class="titre">Titre d’une page web</span>.
+        Consulté le 23 novembre 2026.
+        <a href="https://example.com">Lien</a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
